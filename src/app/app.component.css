@@ -1,0 +1,245 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.custom-navbar {
+    background-color: black;
+    border: 1px solid white;
+    /* border-radius: 10px; */
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(248, 87, 248);
+    /* Highlight effect */
+}
+
+a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.city-1 {
+    border: 1px solid rgb(247, 124, 247);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.image-hero {
+    width: 85%;
+    height: 500px;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+/* .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    background: black; 
+    color: white;
+    padding: 20px;
+  } */
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.image-2 {
+    height: 550px;
+    /* width: 450px; */
+    border-radius: 20px;
+    /* margin-left: 150px; */
+}
+
+.lead {
+    font-size: 15px;
+}
+
+.hero-section-about {
+    margin-top: 100px;
+}
+
+.image {
+    height: 240px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section {
+    background-color: rgb(3, 3, 27);
+    color: white;
+    /* border: 1px solid rgb(247, 124, 247); */
+    margin-top: 40px;
+}
+
+.list-service {
+    background-color: rgb(26, 17, 26);
+    /* border: 1px solid rgb(247, 124, 247); */
+    border-radius: 10px;
+    width: 100%;
+}
+
+.list-service li {
+    /* font-size: 15px; */
+    font-family: sans-serif;
+    color: rgb(165, 141, 165);
+    font-weight: 500;
+}
+
+.section-1 {
+    border: 1px solid rgb(247, 124, 247);
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+ul li::marker {
+    font-size: 20px;
+    /* Scales with text */
+}
+
+.navbar-brand:hover {
+    color: rgb(248, 87, 248);
+}
+.card-1{
+    border: 1px solid rgb(247, 124, 247);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.card-text{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(3, 3, 39);
+    border-radius: 10px;
+    height: 600px;
+
+}
+.image-3{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+
+}
+body {
+    background-color: rgb(26, 17, 26);
+  }
+  .card {
+    border-radius: 10px;
+    border: 1px solid rgb(247, 124, 247);
+    height: 470px;
+    background-color: #131222;
+  }
+.section-2{
+    background-color:#131222;
+    height: 700px;
+    border-radius: 20px;
+    border: 1px solid rgb(247, 124, 247);
+}  
+.card-text-1{
+    line-height: 28px;
+}
+.card-text p{
+    font-size: 15px;
+}
+.faq-container {
+    /* max-width: 600px; */
+    margin: auto;
+    padding: 20px;
+    background: #131222;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .faq-item {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle-btn {
+    background: #131222;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.4s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .faq-content {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 87%;
+
+  }
+
+  .faq-item {
+    background: #131222; /* Set your desired background color */
+    color: white; /* Set text color */
+    border-radius: 10px;
+    border: 1px solid rgb(247, 124, 247);
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .faq-item.open {
+    background: #131222;
+    color: white;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    font-size: 16px;
+    color: #555;
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+  }
+  
+  .faq-item.open .faq-answer {
+    display: block; /* Show answer when clicked */
+  }
+  
+
+  
+  
+  
