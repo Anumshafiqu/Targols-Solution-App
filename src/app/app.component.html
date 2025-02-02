@@ -1,170 +1,184 @@
 <div class="custom-navbar">
   <nav class="navbar navbar-expand-lg p-4 city-1">
-      <div class="container-fluid">
-          <a class="navbar-brand " href="#">
-              <h5>Targols Solutions</h5>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-              </ul>
-          </div>
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#">
+        <h5>Targols Solutions</h5>
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- <span class="navbar-toggler-icon" style="color: white;"></span> -->
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#" (click)="scrollTo('home')">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" (click)="scrollTo('about')">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" (click)="scrollTo('services')">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" (click)="scrollTo('contact')">Contacts</a></li>
+        </ul>
       </div>
+    </div>
   </nav>
   <!-- hero-section -->
   <section class="hero-section">
-      <div class="container-fluid">
-          <div class="d-flex justify-content-center align-items-center">
-              <img src="https://targols.com/assets/images/1688525080-1920x1280.jpg" alt="" class="image-hero mt-8">
-          </div>
-          <div class="container text-white text-center justify-content-center align-items-center">
-              <h1 class="fw-bold">Elevate Your Business with <span class="text-primary">Targols</span> Solutions</h1>
-              <p class="lead small fw-medium mt-4 text-center">
-                  At Targols Solutions, we specialize in web development, web design, and digital marketing to help
-                  your business
-                  thrive in the digital world. Our expert team combines creativity with cutting-edge technology to
-                  deliver tailored
-                  solutions that drive growth and success. Whether you need a stunning website, effective marketing
-                  strategies, or
-                  comprehensive digital solutions, we are your trusted partner.
-              </p>
-          </div>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center align-items-center">
+        <img src="https://targols.com/assets/images/1688525080-1920x1280.jpg" alt="" class="image-hero mt-8">
       </div>
+      <div class="container text-white text-center justify-content-center align-items-center" id="home" #home>
+        <h1 class="fw-bold">Elevate Your Business with <span class="text-primary">Targols</span> Solutions</h1>
+        <p class="lead small fw-medium mt-4 text-center">
+          At Targols Solutions, we specialize in web development, web design, and digital marketing to help
+          your business
+          thrive in the digital world. Our expert team combines creativity with cutting-edge technology to
+          deliver tailored
+          solutions that drive growth and success. Whether you need a stunning website, effective marketing
+          strategies, or
+          comprehensive digital solutions, we are your trusted partner.
+        </p>
+      </div>
+    </div>
   </section>
   <!-- about us -->
 
   <div class="container">
-      <div class="row hero-section-about">
-          <!-- <div class=""> -->
-          <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 mt-8">
-              <div class="hero-section text-white">
-                  <h1 class="fw-bold">About us</h1>
-                  <p class="lead small fw-medium mt-4">Targols Solutions is a leading digital agency
-                      dedicated to helping businesses achieve their online goals. With a passion for innovation
-                      and a commitment to excellence, we provide top-notch web development, web design, and
-                      digital marketing services. Our team of experts works closely with clients to understand
-                      their unique needs and deliver customized solutions that exceed expectations.
-                  </p>
-              </div>
-
-          </div>
-          <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 ms-auto">
-              <img src="https://targols.com/assets/images/3005bfad19368aa436276e5faae5fc66-1036x688.jpg" alt="" class="image-2 img-fluid">
-          </div>
+    <div class="row hero-section-about">
+      <!-- <div class=""> -->
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 mt-8">
+        <div class="hero-section text-white mt-8" id="about" #about>
+          <h1 class="fw-bold">About us</h1>
+          <p class="lead small fw-medium mt-4">Targols Solutions is a leading digital agency
+            dedicated to helping businesses achieve their online goals. With a passion for innovation
+            and a commitment to excellence, we provide top-notch web development, web design, and
+            digital marketing services. Our team of experts works closely with clients to understand
+            their unique needs and deliver customized solutions that exceed expectations.
+          </p>
+        </div>
 
       </div>
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 ms-auto mt-6">
+        <img src="https://targols.com/assets/images/3005bfad19368aa436276e5faae5fc66-1036x688.jpg" alt=""
+          class="image-2 img-fluid">
+      </div>
+
+    </div>
 
   </div>
   <!-- service -->
   <div class="section">
-      <div class="container">
-          <div class="row d-flex justify-content-center align-items-center section-1">
-              <h1 class="text-center my-5 fw-bold">Our Services</h1>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                  <div class="justify-content-center align-items-center">
-                      <img src="https://targols.com/assets/images/gettyimages-1066987348-66e3879d27d244b3b8276484db518bb5-806x537.jpg" alt="" class="image img-fluid">
-                      <ul class="list-service p-3 px-5">
-                          <li class=""><strong class="fs-6 mb-2">Web Development:</strong>
-                              <p class="fw-medium mt-2">Our web development services focus on creating robust,
-                                  scalable, and secure websites
-                                  that
-                                  meet your business needs. We use the latest technologies and best practices to
-                                  ensure
-                                  your website is fast, responsive, and user-friendly.</p>
-                          </li>
-                          <li><strong class="fs-6 mb-2">Web Design:</strong>
-                              <p class="fw-medium mt-2">We offer stunning web design services that combine aesthetics
-                                  with functionality. Our
-                                  designers create visually appealing and intuitive interfaces that enhance user
-                                  experience and drive engagement.</p>
-                          </li>
-                          <li><strong class="fs-6 mb-2">Digital Marketing:</strong>
-                              <p class="fw-medium mt-2">Our digital marketing services include SEO, PPC, social media
-                                  marketing, and content
-                                  marketing. We help you reach your target audience, increase brand visibility, and
-                                  drive
-                                  meaningful traffic to your website.</p>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <!-- second -->
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-1">
-                  <div class="justify-content-center align-items-center">
-                      <img src="https://targols.com/assets/images/bd3d65200082050eb17de61eb627cfbd-806x537.jpg" alt="" class="image img-fluid">
-                      <ul class="list-service p-3 px-5">
-                          <li class=""><strong class="fs-6 mb-2">E-commerce Solutions:</strong>
-                              <p class="fw-medium mt-2">We specialize in developing and designing e-commerce platforms
-                                  that are secure,
-                                  scalable, and optimized for conversions. Our solutions help you manage your online
-                                  store efficiently and provide a seamless shopping experience for your customers.</p>
-                          </li>
-                          <li><strong class="fs-6 mb-2">Mobile App Development:</strong>
-                              <p class="fw-medium mt-2">Our mobile app development services cater to both iOS and
-                                  Android platforms. We
-                                  create user-friendly, feature-rich apps that help you engage with your customers on
-                                  the go.</p>
-                          </li>
-                          <li><strong class="fs-6 mb-2">Branding and Identity:</strong>
-                              <p class="fw-medium mt-2">We offer comprehensive branding and identity services to help
-                                  you establish a strong
-                                  brand presence. Our team creates compelling brand strategies, logos, and visual
-                                  identities that resonate with your audience.</p>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center section-1" id="services" #services>
+        <h1 class="text-center my-5 fw-bold">Our Services</h1>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div class="justify-content-center align-items-center">
+            <img
+              src="https://targols.com/assets/images/gettyimages-1066987348-66e3879d27d244b3b8276484db518bb5-806x537.jpg"
+              alt="" class="image img-fluid">
+            <ul class="list-service p-3 px-5">
+              <li class=""><strong class="fs-6 mb-2">Web Development:</strong>
+                <p class="fw-medium mt-2">Our web development services focus on creating robust,
+                  scalable, and secure websites
+                  that
+                  meet your business needs. We use the latest technologies and best practices to
+                  ensure
+                  your website is fast, responsive, and user-friendly.</p>
+              </li>
+              <li><strong class="fs-6 mb-2">Web Design:</strong>
+                <p class="fw-medium mt-2">We offer stunning web design services that combine aesthetics
+                  with functionality. Our
+                  designers create visually appealing and intuitive interfaces that enhance user
+                  experience and drive engagement.</p>
+              </li>
+              <li><strong class="fs-6 mb-2">Digital Marketing:</strong>
+                <p class="fw-medium mt-2">Our digital marketing services include SEO, PPC, social media
+                  marketing, and content
+                  marketing. We help you reach your target audience, increase brand visibility, and
+                  drive
+                  meaningful traffic to your website.</p>
+              </li>
+            </ul>
           </div>
+        </div>
+        <!-- second -->
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-1">
+          <div class="justify-content-center align-items-center">
+            <img src="https://targols.com/assets/images/bd3d65200082050eb17de61eb627cfbd-806x537.jpg" alt=""
+              class="image img-fluid">
+            <ul class="list-service p-3 px-5">
+              <li class=""><strong class="fs-6 mb-2">E-commerce Solutions:</strong>
+                <p class="fw-medium mt-2">We specialize in developing and designing e-commerce platforms
+                  that are secure,
+                  scalable, and optimized for conversions. Our solutions help you manage your online
+                  store efficiently and provide a seamless shopping experience for your customers.</p>
+              </li>
+              <li><strong class="fs-6 mb-2">Mobile App Development:</strong>
+                <p class="fw-medium mt-2">Our mobile app development services cater to both iOS and
+                  Android platforms. We
+                  create user-friendly, feature-rich apps that help you engage with your customers on
+                  the go.</p>
+              </li>
+              <li><strong class="fs-6 mb-2">Branding and Identity:</strong>
+                <p class="fw-medium mt-2">We offer comprehensive branding and identity services to help
+                  you establish a strong
+                  brand presence. Our team creates compelling brand strategies, logos, and visual
+                  identities that resonate with your audience.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
   <!-- why choose tatgol solutions -->
 
   <div class="container">
-      <div class="row hero-section">
-        <h1 class="text-center my-8 fw-bold text-white">Why Choose Targols Solutions</h1>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <div class="card-1">
-                  <div class="card-text text-white w-17rem p-4">
-                      <h6 class="mb-3"><strong class="fw-bold">Expertise and Experience:</strong></h6>
-                      <p class="lead fw-medium">With years of experience in the industry, our team of experts brings a wealth of knowledge
-                          and skills to every project. We stay updated with the latest trends and technologies to
-                          deliver innovative solutions.Our client-centric approach that we deliver tailored solutions that meet their specific requirement</p>
-                      <p class=" my-3"><strong class="fw-bold">Client-Centric Approach:</strong></p>
-                      <p class="lead fw-medium mb-1 mt-2 fs-6">We prioritize our clients' needs and work closely with them to understand their goals and
-                          challenges. Our client-centric that.Our client-centric approach ensures that we deliver tailored solutions that meet their specific requirement
+    <div class="row hero-section">
+      <h1 class="text-center my-8 fw-bold text-white">Why Choose Targols Solutions</h1>
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card-1">
+          <div class="card-text text-white w-17rem p-4">
+            <h6 class="mb-3"><strong class="fw-bold">Expertise and Experience:</strong></h6>
+            <p class="lead fw-medium">With years of exper ience in the industry, our team of experts brings a wealth of
+              knowledge
+              and skills to every project. We stay updated with the latest trends and technologies to
+              deliver innovative solutions.Our client-centric approach that we deliver tailored solutions that meet
+              their specific requirement</p>
+            <p class=" my-3"><strong class="fw-bold">Client-Centric Approach:</strong></p>
+            <p class="lead fw-medium mb-1 mt-2 fs-6">We prioritize our clients' needs and work closely with them to
+              understand their goals and
+              challenges. Our client-centric that.Our client-centric approach ensures that we deliver tailored solutions
+              that meet their specific requirement
 
-                      </p>
-                  </div>
-                  <img src="https://targols.com/assets/images/clement-helardot-95yrwf6cnw8-unsplash-642x428.jpg" alt="Technology" class="image-3">
-              </div>
+            </p>
           </div>
-
-
-
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <div class="card-1">
-                  <div class="card-text text-white w-17rem p-4 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                      <p class="mb-3"><strong class="fw-bold">Expertise and Experience:</strong></p>
-                      <p class="lead fw-medium">With years of experience in the industry, our team of experts brings a wealth of knowledge
-                          and skills to every project. We stay updated with the latest trends and technologies to
-                          deliver innovative solutions.Our client-centric approach ensures that we deliver tailored solutions that meet their specific requirement</p>
-                      <p class=" my-3"><strong class="fw-bold">Client-Centric Approach:</strong></p>
-                      <p class="lead fw-medium mb-1 mt-2">We prioritize our clients' needs and work closely with them to understand their goals and
-                          challenges. Our client-centric approach ensures that we deliver tailored solutions that meet
-                          their specific requirement.Our client-centric.
-
-                      </p>
-                  </div>
-                  <img src="https://targols.com/assets/images/5mcb0sl9s9yizh55t0sj-642x376.jpg" alt="Technology" class="image-3">
-              </div>
-          </div>
+          <img src="https://targols.com/assets/images/clement-helardot-95yrwf6cnw8-unsplash-642x428.jpg"
+            alt="Technology" class="image-3">
+        </div>
       </div>
+
+
+
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card-1">
+          <div class="card-text text-white w-17rem p-4 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <p class="mb-3"><strong class="fw-bold">Expertise and Experience:</strong></p>
+            <p class="lead fw-medium">With years of experience in the industry, our team of experts brings a wealth of
+              knowledge
+              and skills to every project. We stay updated with the latest trends and technologies to
+              deliver innovative solutions.Our client-centric approach ensures that we deliver tailored solutions that
+              meet their specific requirement</p>
+            <p class=" my-3"><strong class="fw-bold">Client-Centric Approach:</strong></p>
+            <p class="lead fw-medium mb-1 mt-2">We prioritize our clients' needs and work closely with them to
+              understand their goals and
+              challenges. Our client-centric approach ensures that we deliver tailored solutions that meet
+              their specific requirement.Our client-centric.
+
+            </p>
+          </div>
+          <img src="https://targols.com/assets/images/5mcb0sl9s9yizh55t0sj-642x376.jpg" alt="Technology"
+            class="image-3">
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -206,34 +220,146 @@
       </div>
     </div>
   </div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5">
-      <div class="faq-container">
-        <h1 class="text-center my-4">FAQ</h1>
-      
-        <div *ngFor="let item of faqItems; let i = index" class="faq-item">
-          <div class="faq-header" (click)="toggleFAQ(i)">
-   
-            <h3 class="p-3">{{ item.question }}</h3>
-            <button class="toggle-btn">
-              <i class="pi" [ngClass]="item.open ? 'pi-times' : 'pi-plus'"></i>
-            </button>
-          </div>
-      
-          <div class="faq-content" *ngIf="item.open">
-            <p class="mx-2 fw-medium">{{ item.answer }}</p>
+
+   <div class="container">
+    <div class="row hero-section">
+      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5">
+        <div class="faq-container">
+          <h1 class="text-center my-4">FAQ</h1>
+
+          <div *ngFor="let item of faqItems; let i = index" class="faq-item">
+            <div class="faq-header" (click)="toggleFAQ(i)">
+
+              <h3 class="p-3">{{ item.question }}</h3>
+              <button class="toggle-btn">
+                <i class="pi" [ngClass]="item.open ? 'pi-times' : 'pi-plus'"></i>
+              </button>
+            </div>
+
+            <div class="faq-content" *ngIf="item.open">
+              <p class="mx-2 fw-medium w-100">{{ item.answer }}</p>
+            </div>
           </div>
         </div>
       </div>
-      
-      
-      
-      
+    </div>
+  </div> 
+
+ 
+
+
+
+
+
+
+
+
+  <!-- contact us -->
+  <div class="container text-center my-5 hero-section" id="contact" #contact>
+    <h1 class="text-white mb-8 fw-bold">Our Contacts</h1>
+    <div class="row justify-content-center mt-4">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
+        <div class="contact-card">
+          <div class="icon-circle">
+            <i class="fa fa-envelope fw-medium" aria-hidden="true"></i>
+          </div>
+          <p class="fs-3 mt-4 fw-medium">about &#64;Targols.com</p>
+        </div>
+      </div>
+
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
+        <div class="contact-card">
+          <div class="icon-circle">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <p class="fs-3 mt-4 fw-medium">+49228650624</p>
+        </div>
+      </div>
+
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
+        <div class="contact-card">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p class="fs-3 mt-4 fw-medium">Sterntorbrücke 4, 53111 Bonn, Germany</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <div class="container mt-8">
+    <div class="row mt-8 mb-8">
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 mt-8 mb-8">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light fw-bold small p-3 px-5 text-secondary" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          Cookie Privacy Policy
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title centered-title fw-medium fs-3">Cookie Privacy Policy</h5>
+                  <button type="button" class="btn-close mx-3" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body fw-medium lead mx-5">
+                  <p class="mt-3 mb-3">At Targols Solutions, we value your privacy and are committed to protecting your
+                    personal
+                    information. This Cookie Privacy Policy outlines how we collect, use, and safeguard the data
+                    collected through cookies on our website.</p>
+                  <p>What are Cookies?<br>
+                    Cookies are small text files that are stored on your device when you visit a website. They help
+                    enhance your browsing experience by remembering your preferences and actions on the site. Cookies
+                    also provide us with valuable insights to improve our website and tailor our services to your needs.
+                  </p>
+                  <p>How We Use Cookies<br>
+                    We use cookies for various purposes, including:
+                    1. Essential Cookies: These cookies are necessary for the proper functioning of our website. They
+                    enable basic features such as page navigation, secure access, and load balancing.
+                    2. Analytical Cookies: We use analytical cookies to gather information about how visitors use our
+                    website. This helps us analyze user behavior, improve our content, and optimize the user experience.
+                    3. Marketing Cookies: Marketing cookies are used to track visitors across websites. The information
+                    collected is used to display personalized advertisements and measure the effectiveness of our
+                    marketing campaigns.
+                    4. Preference Cookies: These cookies allow our website to remember your preferences and provide a
+                    more personalized experience. They remember your language preference, font size, and other site
+                    preferences.</p>
+                  <p>Managing Cookies<br>
+                    You have the option to accept or decline cookies when you visit our website. Most web browsers
+                    automatically accept cookies, but you can modify your browser settings to decline cookies if you
+                    prefer. Please note that blocking or deleting cookies may impact your browsing experience and limit
+                    certain functionalities of our website.</p>
+                  <p>Third-Party Cookies<br>
+                    We may also use third-party cookies from trusted partners. These cookies are governed by the
+                    respective privacy policies of the third-party providers. We encourage you to review their policies
+                    for more information on how they handle your data.</p>
+                  <p>Updates to this Policy<br>
+                    We may update our Cookie Privacy Policy from time to time to reflect changes in technology, legal
+                    requirements, or our business practices. We encourage you to review this policy periodically to stay
+                    informed about how we use cookies.
+                    By continuing to use our website, you consent to the use of cookies as described in this</p>
+                  <p>Cookie Privacy Policy.<br>
+                    If you have any questions or concerns about our use of cookies, please contact us at phone number
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="border text-white mx-8">
+  <div class="container">
+    <div class="row">
+      <h5 class="text-center text-white fw-medium fs-6 my-4">© Targols Solutions 2024 - All Rights Reserved</h5>
+    </div>
+  </div>
 </div>
 
 <!-- </div> -->

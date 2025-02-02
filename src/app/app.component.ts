@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -39,5 +39,32 @@ export class AppComponent {
 
   toggleFAQ(index: number) {
     this.faqItems[index].open = !this.faqItems[index].open;
+  }
+  @ViewChild('home', { static: false }) home!: ElementRef;
+  @ViewChild('about', { static: false }) about!: ElementRef;
+  @ViewChild('services', { static: false }) services!: ElementRef;
+  @ViewChild('contact', { static: false }) contact!: ElementRef;
+
+  scrollTo(section: string) {
+    let element: ElementRef | undefined;
+
+    switch (section) {
+      case 'home':
+        element = this.home;
+        break;
+      case 'about':
+        element = this.about;
+        break;
+      case 'services':
+        element = this.services;
+        break;
+      case 'contact':
+        element = this.contact;
+        break;
+    }
+
+    if (element) {
+      element.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }
