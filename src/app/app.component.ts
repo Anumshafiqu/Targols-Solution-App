@@ -1,10 +1,22 @@
 import { Component , ViewChild, ElementRef } from '@angular/core';
+import { trigger, style, transition, animate } from '@angular/animations'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: false,
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  animations: [
+    trigger('expandCollapse', [
+      transition(':enter', [
+        style({ height: '0px', opacity: 0 }),
+        animate('300ms ease-out', style({ height: '*', opacity: 1 }))
+      ]),
+      transition(':leave', [
+        animate('300ms ease-in', style({ height: '0px', opacity: 0 }))
+      ])
+    ])
+  ]
 })
 export class AppComponent {
   faqItems = [
@@ -40,6 +52,7 @@ export class AppComponent {
   toggleFAQ(index: number) {
     this.faqItems[index].open = !this.faqItems[index].open;
   }
+ 
   @ViewChild('home', { static: false }) home!: ElementRef;
   @ViewChild('about', { static: false }) about!: ElementRef;
   @ViewChild('services', { static: false }) services!: ElementRef;

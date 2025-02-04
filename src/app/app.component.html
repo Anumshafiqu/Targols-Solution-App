@@ -69,6 +69,7 @@
       <div class="row d-flex justify-content-center align-items-center section-1" id="services" #services>
         <h1 class="text-center my-5 fw-bold">Our Services</h1>
         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <p-card>
           <div class="justify-content-center align-items-center">
             <img
               src="https://targols.com/assets/images/gettyimages-1066987348-66e3879d27d244b3b8276484db518bb5-806x537.jpg"
@@ -97,9 +98,11 @@
               </li>
             </ul>
           </div>
+        </p-card>
         </div>
         <!-- second -->
         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-1">
+          <p-card>
           <div class="justify-content-center align-items-center">
             <img src="https://targols.com/assets/images/bd3d65200082050eb17de61eb627cfbd-806x537.jpg" alt=""
               class="image img-fluid">
@@ -124,6 +127,7 @@
               </li>
             </ul>
           </div>
+        </p-card>
         </div>
       </div>
     </div>
@@ -186,6 +190,7 @@
     <div class="row mt-4 section-2 hero-section">
       <h1 class="text-center text-white fw-bold my-5 mt-5">What Sets Us Apart</h1>
       <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 my-6">
+        <p-card>
         <div class="card p-4 border-light text-white">
           <h3 class="fw-bold my-2">Customized<br> Solutions</h3>
           <h5 class="card-text-1 fw-medium fs-5 mt-2 mb-7">
@@ -195,8 +200,10 @@
             each client, ensuring that they get the best results.
           </h5>
         </div>
+      </p-card>
       </div>
       <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 my-6">
+        <p-card>
         <div class="card p-4 border-light text-white">
           <h3 class="fw-bold my-2">Cutting-Edge Technology</h3>
           <h5 class="card-text-1 fw-medium fs-5 mt-2 mb-7">
@@ -206,8 +213,10 @@
             trends and innovations to provide the best possible outcomes.
           </h5>
         </div>
+      </p-card>
       </div>
       <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 my-6">
+        <p-card>
         <div class="card p-4 border-light text-white">
           <h3 class="fw-bold">Collaborative Approach</h3>
           <h5 class=" card-text-1 fw-medium mt-2 mb-3">
@@ -217,13 +226,14 @@
             vision and deliver solutions that align with their goals.
           </h5>
         </div>
+      </p-card>
       </div>
     </div>
   </div>
 
-   <div class="container">
+  <div class="container">
     <div class="row hero-section">
-      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5">
+      <!-- <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 my-5">
         <div class="faq-container">
           <h1 class="text-center my-4">FAQ</h1>
 
@@ -241,12 +251,35 @@
             </div>
           </div>
         </div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row  hero-section-1">
+      <div class="faq-container">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <p-accordion>
+            <div class="faq-container" class="w-100">
+              <h1 class="text-center">FAQ</h1>
+              <div *ngFor="let item of faqItems; let i = index" class="faq-item">
+                <div class="faq-header" (click)="toggleFAQ(i)">
+                  <h3 class="p-3">{{ item.question }}</h3>
+                  <button class="toggle-btn">
+                    <i class="pi" [ngClass]="item.open ? 'pi-times' : 'pi-plus'"></i>
+                  </button>
+                </div>
+                <div class="faq-content" *ngIf="item.open" @expandCollapse>
+                  <p class="mx-2 fw-medium">{{ item.answer }}</p>
+                </div>
+              </div>
+            </div>
+          </p-accordion>
+        </div>
       </div>
     </div>
-  </div> 
-
- 
-
+  </div>
 
 
 
@@ -255,7 +288,7 @@
 
 
   <!-- contact us -->
-  <div class="container text-center my-5 hero-section" id="contact" #contact>
+  <!-- <div class="container text-center my-5 hero-section" id="contact" #contact>
     <h1 class="text-white mb-8 fw-bold">Our Contacts</h1>
     <div class="row justify-content-center mt-4">
       <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
@@ -285,7 +318,59 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+
+
+
+  <div class="container text-center my-7" id="contact">
+    <h1 class="text-white mb-4 fw-bold hero-section">Our Contacts</h1>
+    
+    <div class="row mx-4 mt-7">
+      <!-- Email Card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
+        <p-card>
+          <div class="contact-card">
+            <div class="icon-circle">
+              <i class="fa fa-envelope fw-medium" aria-hidden="true"></i>
+            </div>
+            <p class="fs-3 mt-4 fw-medium">about &#64;Targols.com</p>
+          </div>
+        </p-card>
+      </div>
+  
+      <!-- Phone Card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
+        <p-card>
+          <div class="contact-card">
+            <div class="icon-circle">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <p class="fs-3 mt-4 fw-medium">+49228650624</p>
+          
+          </div>
+        </p-card>
+      </div>
+  
+      <!-- Address Card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
+        <p-card>
+          <div class="contact-card">
+            <div class="icon-circle">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p class="fs-3 mt-4 fw-medium">Sterntorbrücke 4, 53111 Bonn, Germany</p>
+          </div>
+        </p-card>
+      </div>
+    </div>
   </div>
+  
+
+
+
+
+
   <div class="container mt-8">
     <div class="row mt-8 mb-8">
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 mt-8 mb-8">
