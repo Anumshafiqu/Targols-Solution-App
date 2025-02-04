@@ -40,6 +40,10 @@ a {
     height: 500px;
     margin: 40px;
     border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 /* .hero-section {
@@ -164,6 +168,8 @@ body {
     border: 1px solid rgb(247, 124, 247);
     /* height: 470px; */
     background-color: #131222;
+    /* transform: scale(1.1); */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .section-2 {
@@ -327,6 +333,8 @@ h2 {
     width: 100%;
 }
 
+  
+
 
 
 
@@ -440,6 +448,7 @@ h2 {
     border-radius: 8px;
     padding: 20px;
     border: 1px solid rgb(247, 124, 247);
+    height: 300px;
 }
 
 .icon-circle i {
@@ -450,3 +459,29 @@ h2 {
 .fs-3 {
     font-size: 1.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+  .card:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+
+  }
+
+  
+
+  
+  
+  
+  
+  
+  
